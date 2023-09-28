@@ -8,12 +8,12 @@ apt:
   # Adoptium
   - 3B04D753C9050D9A5D343F39843C48A565F8F04B
   repos:
-  - 'deb http://archive.ubuntu.com/ubuntu jammy main multiverse universe restricted'
-  - 'deb http://archive.ubuntu.com/ubuntu jammy-security main multiverse universe restricted'
-  - 'deb http://archive.ubuntu.com/ubuntu jammy-backports main multiverse universe restricted'
+  - 'deb http://archive.ubuntu.com/ubuntu focal main multiverse universe restricted'
+  - 'deb http://archive.ubuntu.com/ubuntu focal-security main multiverse universe restricted'
+  - 'deb http://archive.ubuntu.com/ubuntu focal-backports main multiverse universe restricted'
   - 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
-  - 'deb [arch=amd64] https://packages.adoptium.net/artifactory/deb jammy main'
-  - 'deb https://cloud.r-project.org/bin/linux/ubuntu jammy-cran40/'
+  - 'deb [arch=amd64] https://packages.adoptium.net/artifactory/deb focal main'
+  - 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
   packages:
   - ncdu
   # Some useful commandline utilities
@@ -24,7 +24,8 @@ apt:
   - gfortran
   - cmake
   - automake
-  - llvm-defaults
+  - llvm
+  - clang
   # Fake Matlab
   - octave
   # Visual Studio Code
@@ -38,9 +39,9 @@ apt:
   - temurin-17-jdk
   deb:
   # R-Studio
-  - https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.0-463-amd64.deb
+  - https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb
   # Dropbox
-  - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2023.09.06_amd64.deb
+  - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
 
 
 miniconda:
@@ -67,5 +68,3 @@ miniconda:
   #   - requests
   #   - ...
   prefix: /etc/miniconda/envs
-
-    
