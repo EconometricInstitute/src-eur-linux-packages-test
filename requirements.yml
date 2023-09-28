@@ -1,0 +1,71 @@
+---
+apt:
+  repo_keys: 
+  # R-project
+  - E298A3A825C0D65DFD57CBB651716619E084DAB9
+  # VS-Code
+  - BC528686B50D79E339D3721CEB3E94ADBE1229CF
+  # Adoptium
+  - 3B04D753C9050D9A5D343F39843C48A565F8F04B
+  repos:
+  - 'deb http://archive.ubuntu.com/ubuntu jammy main multiverse universe restricted'
+  - 'deb http://archive.ubuntu.com/ubuntu jammy-security main multiverse universe restricted'
+  - 'deb http://archive.ubuntu.com/ubuntu jammy-backports main multiverse universe restricted'
+  - 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
+  - 'deb [arch=amd64] https://packages.adoptium.net/artifactory/deb jammy main'
+  - 'deb https://cloud.r-project.org/bin/linux/ubuntu jammy-cran40/'
+  packages:
+  - ncdu
+  # Some useful commandline utilities
+  - mc
+  - htop
+  # Standard development stuff
+  - build-essential
+  - gfortran
+  - cmake
+  - automake
+  - llvm-defaults
+  # Fake Matlab
+  - octave
+  # Visual Studio Code
+  - code
+  # R
+  - r-base
+  - r-base-dev
+  - r-recommended
+  # Java & OpenJDK
+  - maven
+  - temurin-17-jdk
+  deb:
+  # R-Studio
+  - https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.0-463-amd64.deb
+  # Dropbox
+  - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2023.09.06_amd64.deb
+
+
+miniconda:
+  name: custom-kernel
+  channels:
+  - conda-forge
+  - defaults
+  dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - seaborn
+  - statsmodels
+  # to create ipython-kernels you will always need the package ipykernel
+  - ipykernel
+  # After conda-packages pip-packages can still be installed
+  # so install pip ...
+  - pip
+  # ... and tell conda to use it:
+  # - pip:
+  #   - requests
+  #   - ...
+  prefix: /etc/miniconda/envs
+
+    
