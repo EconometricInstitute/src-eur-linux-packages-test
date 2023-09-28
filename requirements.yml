@@ -24,7 +24,8 @@ apt:
   - gfortran
   - cmake
   - automake
-  - llvm-defaults
+  - llvm
+  - clang
   # Fake Matlab
   - octave
   # Visual Studio Code
