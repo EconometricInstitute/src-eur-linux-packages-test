@@ -78,7 +78,7 @@ snap:
   regular:
   - postman
 
-r:
- - tidyverse
- - tinymodels
+#r:
+# - tidyverse
+# - tinymodels
 
