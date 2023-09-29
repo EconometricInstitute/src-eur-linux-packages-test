@@ -2,7 +2,7 @@
 apt:
   repo_keys: 
   # R-project
-  - E298A3A825C0D65DFD57CBB651716619E084DAB9
+  # - E298A3A825C0D65DFD57CBB651716619E084DAB9
   # VS-Code
   - BC528686B50D79E339D3721CEB3E94ADBE1229CF
   # Adoptium
@@ -13,7 +13,7 @@ apt:
   - 'deb http://archive.ubuntu.com/ubuntu focal-backports main multiverse universe restricted'
   - 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
   - 'deb [arch=amd64] https://packages.adoptium.net/artifactory/deb focal main'
-  - 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+  # - 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
   packages:
   - ncdu
   # Some useful commandline utilities
@@ -31,15 +31,15 @@ apt:
   # Visual Studio Code
   - code
   # R
-  - r-base
-  - r-base-dev
-  - r-recommended
+  # - r-base
+  # - r-base-dev
+  # - r-recommended
   # Java & OpenJDK
   - maven
   - temurin-17-jdk
   deb:
   # R-Studio
-  - https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb
+  # - https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb
   # Dropbox
   - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
 
@@ -78,7 +78,7 @@ snap:
   regular:
   - postman
 
-#r:
-# - tidyverse
-# - tinymodels
-
+r:
+  packages:
+  - tidyverse
+  - tinymodels
