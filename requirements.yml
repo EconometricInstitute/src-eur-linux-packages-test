@@ -41,8 +41,7 @@ apt:
   # R-Studio
   # - https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.09.0-463-amd64.deb
   # Dropbox
-  - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
-
+  # - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
 
 miniconda:
   name: custom-kernel
@@ -78,7 +77,7 @@ snap:
   regular:
   - postman
 
-r:
-  packages:
-  - tidyverse
-  - tinymodels
+#r:
+#  packages:
+#  - tidyverse
+#  - tinymodels
